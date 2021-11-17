@@ -10,6 +10,12 @@ variable "resource_group_id" {
   type        = string
 }
 
+variable "resource_group" {
+  description = "ID of the resource group"
+  type        = string
+  default     = "Test"
+}
+
 variable "service_name" {
   description = "Name of the instance"
   type        = string
