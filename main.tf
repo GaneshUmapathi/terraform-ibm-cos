@@ -2,7 +2,7 @@ module "cos" {
   // Uncommnet the following line to point the source to registry level
   //source = "terraform-ibm-modules/cos/ibm//modules/instance"
 
-  source = "../../modules/instance"
+  source = "./modules/instance"
 #  bind_resource_key = var.bind_resource_key
   service_name      = var.service_name
   resource_group_id = data.ibm_resource_group.cos_group.id
