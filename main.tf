@@ -1,13 +1,13 @@
-# module "cos" {
-#   // Uncommnet the following line to point the source to registry level
-#   //source = "terraform-ibm-modules/cos/ibm//modules/instance"
+module "cos" {
+  // Uncommnet the following line to point the source to registry level
+  //source = "terraform-ibm-modules/cos/ibm//modules/instance"
 
-#   source = "../../modules/instance"
-#   bind_resource_key = var.bind_resource_key
-#   service_name      = var.service_name
-#   resource_group_id = data.ibm_resource_group.cos_group.id
-#   plan              = var.plan
-#   region            = var.region
+  source = "../../modules/instance"
+#  bind_resource_key = var.bind_resource_key
+  service_name      = var.service_name
+  resource_group_id = data.ibm_resource_group.cos_group.id
+  plan              = var.plan
+  region            = var.region
 #   service_endpoints = var.service_endpoints
 #   parameters        = var.parameters
 #   tags              = var.tags
@@ -18,9 +18,9 @@
 #   role              = var.role
 #   key_tags          = var.key_tags
 #   key_parameters    = var.key_parameters
+}
 
-# }
-
+/*
 module "cos" {
   // Uncommnet the following line to point the source to registry level
   //source                 = "terraform-ibm-modules/cos/ibm//modules/instance"
@@ -32,4 +32,5 @@ module "cos" {
   plan                   = var.cos_plan
   region                 = var.cos_location
 }
+*/
     
