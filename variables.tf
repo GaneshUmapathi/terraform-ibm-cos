@@ -17,7 +17,7 @@ variable "resource_group" {
   default     = "Test"
 }
 
-variable "service_name" {
+variable "service_name_wl" {
   description = "Name of the instance"
   type        = string
 }

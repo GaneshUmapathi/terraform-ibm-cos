@@ -1,10 +1,10 @@
-module "cos" {
+module "cos_wl" {
   // Uncommnet the following line to point the source to registry level
   //source = "terraform-ibm-modules/cos/ibm//modules/instance"
 
   source = "./modules/instance"
 #  bind_resource_key = var.bind_resource_key
-  service_name      = var.service_name
+  service_name      = var.service_name_wl
   resource_group_id = data.ibm_resource_group.cos_group.id
   plan              = var.plan
   region            = var.region
@@ -20,7 +20,7 @@ module "cos" {
 #   key_parameters    = var.key_parameters
 }
 
-module "cos" {
+module "cos_mgmt" {
   // Uncommnet the following line to point the source to registry level
   //source = "terraform-ibm-modules/cos/ibm//modules/instance"
 
