@@ -5,11 +5,11 @@
 
 ######## configured by user ########################
 
-variable "resource_group_id" {
-  description = "ID of the resource group"
-  type        = string
-  default     = "50e9de83cec04c5fbbca572902438e7d"
-}
+# variable "resource_group_id" {
+#   description = "ID of the resource group"
+#   type        = string
+#   default     = "50e9de83cec04c5fbbca572902438e7d"
+# }
 
 variable "resource_group" {
   description = "ID of the resource group"
@@ -33,6 +33,11 @@ variable "region" {
   type        = string
 }
 
+
+variable "service_name_mgmt" {
+  description = "Name of the instance"
+  type        = string
+}
 # variable "parameters" {
 #   type        = map(string)
 #   description = "Arbitrary parameters to pass cos instance"
