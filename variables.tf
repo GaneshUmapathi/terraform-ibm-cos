@@ -5,22 +5,22 @@
 
 ######## configured by user ########################
 
-variable "resource_group_id" {
+variable "resource_group" {
   description = "ID of the resource group"
   type        = string
 }
 
-variable "service_name" {
+variable "cos_instance_name" {
   description = "Name of the instance"
   type        = string
 }
 
-variable "plan" {
+variable "cos_plan" {
   description = "plan type"
   type        = string
 }
 
-variable "region" {
+variable "cos_location" {
   description = "Provisioning Region"
   type        = string
 }
