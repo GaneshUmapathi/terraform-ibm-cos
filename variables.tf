@@ -24,7 +24,7 @@ variable "service_name" {
 variable "plan" {
   description = "plan type"
   type        = string
-  default     = "Standard"
+  default     = "standard"
 }
 
 variable "region" {
