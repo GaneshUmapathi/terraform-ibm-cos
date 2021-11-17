@@ -20,17 +20,3 @@ module "cos" {
 #   key_parameters    = var.key_parameters
 }
 
-/*
-module "cos" {
-  // Uncommnet the following line to point the source to registry level
-  //source                 = "terraform-ibm-modules/cos/ibm//modules/instance"
-
-  source                 = "./modules/instance"
-  provision_cos_instance = true
-  service_name           = var.cos_instance_name
-  resource_group_id      = data.ibm_resource_group.group.id
-  plan                   = var.cos_plan
-  region                 = var.cos_location
-}
-*/
-    
