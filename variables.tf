@@ -8,6 +8,7 @@
 variable "resource_group_id" {
   description = "ID of the resource group"
   type        = string
+  default     = "50e9de83cec04c5fbbca572902438e7d"
 }
 
 variable "resource_group" {
